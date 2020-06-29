@@ -23,14 +23,20 @@
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.app.json",
             "aot": true,
-            "assets": [
-              "src/favicon.ico",
-              "src/assets"
-            ],
+            "assets": ["src/favicon.ico", "src/assets", "src/app-assets"],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "src/app-assets/css/themes/horizontal-menu-template/style.css",
+              "src/app-assets/css/layouts/style-horizontal.css",
+              "src/app-assets/css/pages/app-chat.css",
+              "src/app-assets/css/pages/login.css",
+              "src/app-assets/css/custom/custom.css",
+              "src/app-assets/css/themes/horizontal-menu-template/materialize.css"
             ],
-            "scripts": []
+            "scripts": [
+              "src/app-assets/vendors/jquery-3.5.1.js",
+              "node_modules/materialize-css/dist/js/materialize.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -87,13 +93,8 @@
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.spec.json",
             "karmaConfig": "karma.conf.js",
-            "assets": [
-              "src/favicon.ico",
-              "src/assets"
-            ],
-            "styles": [
-              "src/styles.scss"
-            ],
+            "assets": ["src/favicon.ico", "src/assets"],
+            "styles": ["src/styles.scss"],
             "scripts": []
           }
         },
@@ -105,9 +106,7 @@
               "tsconfig.spec.json",
               "e2e/tsconfig.json"
             ],
-            "exclude": [
-              "**/node_modules/**"
-            ]
+            "exclude": ["**/node_modules/**"]
           }
         },
         "e2e": {
@@ -123,6 +122,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "shopeable"
+    }
+  },
+  "defaultProject": "shopeable",
+  "cli": {
+    "analytics": "c63c9094-b93b-4e26-a2c6-e379458fe1bd"
+  }
 }

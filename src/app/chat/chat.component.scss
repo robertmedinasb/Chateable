@@ -1,0 +1,16 @@
+#text {
+  width: 100%;
+  color: black;
+  border: none;
+}
+.btn-delete {
+  background: transparent;
+  border: none;
+  color: #ffffff;
+  transition: all 0.3s;
+}
+
+.btn-delete:hover {
+  color: red;
+  transform: scale(1.1);
+}
