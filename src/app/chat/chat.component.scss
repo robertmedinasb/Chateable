@@ -14,3 +14,8 @@
   color: red;
   transform: scale(1.1);
 }
+.chat-area {
+  display: flex;
+  flex-direction: column-reverse;
+  min-height: 55vh;
+}
